@@ -14,8 +14,6 @@ from sampler import NegSampler, negsamp_vectorized_bsearch_preverif
 from min_norm_solvers import MinNormSolver, gradient_normalizers
 from eval_metrics import precision_at_k, recall_at_k, mapk, ndcg_k, idcg_k
 from preprocess import generate_rating_matrix, preprocessing
-from eval_Fairness import Fairness_user, Fairness_item, Fairness_age
-from eval_Gini_PR_Diversity import Gini, Popularity_rate, Simpson_Diversity
 import itertools
 from collections import Counter, OrderedDict
 import pandas as pd

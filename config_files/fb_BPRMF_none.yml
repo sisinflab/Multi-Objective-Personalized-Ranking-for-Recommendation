@@ -1,0 +1,18 @@
+setting:
+  data: facebook_books # Dataset
+  gpu_id: 0 # GPU_ID
+  baseline: BPRMF # Base model
+  wrapper: None # Multi-Objective Method
+  epochs: 500 # Number of epochs
+  validation_rate: 10 # Period of evaluation during training
+  validation_metric: nDCG@20 # Metric of evaluation during training
+  batch_size: 1024 # Batch size
+hyperparameters:
+  dim: [64] # Dimension for embedding
+  lr: [0.01, 0.005, 0.001, 0.0005] # Learning rate
+  l_2: [0.05, 0.01, 0.005, 0.001] #L2 penalty
+  mode: [r] # Which loss to use
+
+
+
+

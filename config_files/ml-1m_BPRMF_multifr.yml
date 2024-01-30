@@ -1,0 +1,21 @@
+setting:
+  data: ml-1m # Dataset
+  gpu_id: 0 # GPU_ID
+  baseline: BPRMF # Base model
+  wrapper: multifr # Multi-Objective Method
+  epochs: 500 # Number of epochs
+  validation_rate: 10 # Period of evaluation during training
+  validation_metric: nDCG@20 # Metric of evaluation during training
+  batch_size: 2048 # Batch size
+hyperparameters:
+  dim: [64] # Dimension for embedding
+  lr: [0.01, 0.005, 0.001, 0.0005] # Learning rate
+  l_2: [0.05, 0.01, 0.005, 0.001] #L2 penalty
+  gamma: [0.5, 0.75] # Patience factor (MultiFR)
+  temp: [0.00001] # How soft ranks to be (MultiFR)
+  mode: [ri] # Which loss to use
+  g_n: [loss+] # Modality of gradient normalization
+  ranker: [base]
+
+
+
