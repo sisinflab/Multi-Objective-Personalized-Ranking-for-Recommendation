@@ -1,6 +1,9 @@
 # Multi-Objective Personalized Ranking for Recommendation
-This repository contains the source codes and datasets of the paper _Multi-Objective Personalized Ranking for Recommendation_ submitted at SIGIR 2024.
+This repository contains the source codes and datasets of the paper _Multi-objective Personalized Ranking for Recommendation_ submitted at SIGIR 2024.
 
+
+### Data
+In the folder `data`, you can find the data used in our work (`Amazon Baby`, `Facebook Books`, `MovieLens1M`). We provide the split version of the data.
 
 ### Run the models
 
