@@ -15,7 +15,6 @@ $ pip install -r req_MPR.txt
 In the folder `data`, you can find the data used in our work (`Amazon Baby`, `Facebook Books`, `MovieLens1M`). We provide the split version of the data.
 
 ### Run the models
-
 In the following, we explain how to run the models within the paper.
 - BPRMF, LightGCN, MultiFR, and MPR can be executed through the `main.py` script. Specifically, you should refer to the configuration files contained into the folder `config_files`. You may train the model by running the following code:
   ```
@@ -25,3 +24,6 @@ In the following, we explain how to run the models within the paper.
   ```
   $ python3 -u main_cpfair.py
   ```
+
+### Evaluation
+To evaluate the models, we relied on the public and open-source framework Elliot. Here, given a pre-obtained recommendation list by running the models as explained above, you can compute the metrics discussed within the paper. Due to GitHub size limitations, we load a compressed version of Elliot on this repository (`elliot_MPR.zip`). Please, refer to Elliot official [documentation](https://elliot.readthedocs.io/en/latest/) for further details on how compute the metrics. We add an example of configuration file in the `config_files` folder within the compressed file.
